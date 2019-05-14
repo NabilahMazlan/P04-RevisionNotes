@@ -93,7 +93,7 @@ public class DBHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         // Run the SQL query and get back the Cursor object
         Cursor cursor = db.rawQuery(selectQuery, null);
-        // moveToFirst() moves to first row
+        // moveToFirst() moves txo first row
         if (cursor.moveToFirst()) {
             // Loop while moveToNext() points to next row and returns true;
             // moveToNext() returns false when no more next row to move to
